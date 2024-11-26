@@ -1,20 +1,21 @@
 return {
-  'catppuccin/nvim',
-  name = 'catppuccin',
-  priority = 1000,
-  config = function()
-    require('catppuccin').setup {
-      flavour = 'frappe',
-      transparent_background = true,
-    }
-    vim.cmd.colorscheme 'catppuccin-frappe'
-  end,
-  -- config = function()
-  --   require('catppuccin').setup {
-  --     flavour = 'frappe',
-  --     transparent_background = true,
-  --   }
-  -- end,
+	"ellisonleao/gruvbox.nvim",
+	name = "gruvbox",
+	priority = 1000,
+	config = function()
+		require("gruvbox").setup({
+			transparent_background = true,
+			contrast = "soft",
+			dim_inactive = true,
+		})
+		vim.cmd.colorscheme("gruvbox")
+	end,
+	-- config = function()
+	--   require('catppuccin').setup {
+	--     flavour = 'frappe',
+	--     transparent_background = true,
+	--   }
+	-- end,
 }
 
 -- return {
